@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Troféus - Homenagem ao Corinthians</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css"> <!-- Normaliza o estilo padrão dos elementos HTML -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS personalizado -->
     <style>
         .trophy-img {
             width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
@@ -15,94 +15,86 @@
         }
         .trophy-card {
             margin-bottom: 30px;
+            text-align: center; /* Centraliza o texto dentro do card */
+        }
+        .trophy-card h5 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .trophy-card p {
+            margin-bottom: 0;
+        }
+        .container {
+            text-align: center; /* Centraliza o texto dentro do contêiner */
         }
     </style>
 </head>
 <body>
     <nav>
-        <div class="logo">
+        <div class="logo text-center">
             <a href="index.html">Corinthians</a>
         </div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </label>
-        <ul class="nav-links">
+        <ul class="nav-links text-center">
             <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Corinthians - A lenda</a></li>
+            <li><a href="sobre.html">História do Corinthians</a></li>
             <li><a href="trofeus.html">Troféus</a></li>
             <li><a href="paginas-oficiais.html">Links Oficiais</a></li>
         </ul>
+        <div class="hamburger text-center">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </nav>
 
     <div class="container mt-4">
-        <h1 class="text-center">Troféus do Corinthians</h1>
+        <h1>Troféus do Corinthians</h1>
         <div class="row">
             <!-- Troféu 1: Campeonato Paulista -->
             <div class="col-md-4">
-                <div class="card trophy-card">
-                    <img src="campeonato_paulista.jpg" class="card-img-top trophy-img" alt="Troféu Campeonato Paulista">
-                    <div class="card-body">
-                        <h5 class="card-title">Campeonato Paulista</h5>
-                        <p class="card-text">O Campeonato Paulista é um dos torneios mais tradicionais do Brasil. O Corinthians é um dos clubes mais vitoriosos, conquistando este troféu em diversas edições.</p>
-                    </div>
+                <div class="trophy-card">
+                    <img src="campeonato_paulista.jpg" class="trophy-img" alt="Troféu Campeonato Paulista">
+                    <h5>Campeonato Paulista</h5>
+                    <p>O Campeonato Paulista é um dos torneios mais tradicionais do Brasil. O Corinthians é um dos clubes mais vitoriosos, conquistando este troféu em diversas edições.</p>
                 </div>
             </div>
 
             <!-- Troféu 2: Campeonato Brasileiro -->
             <div class="col-md-4">
-                <div class="card trophy-card">
-                    <img src="campeonato_brasileiro.jpg" class="card-img-top trophy-img" alt="Troféu Campeonato Brasileiro">
-                    <div class="card-body">
-                        <h5 class="card-title">Campeonato Brasileiro</h5>
-                        <p class="card-text">O Campeonato Brasileiro é a principal competição nacional. O Corinthians venceu este torneio várias vezes, incluindo as edições de 1990, 1998, 1999 e 2015.</p>
-                    </div>
+                <div class="trophy-card">
+                    <img src="campeonato_brasileiro.jpg" class="trophy-img" alt="Troféu Campeonato Brasileiro">
+                    <h5>Campeonato Brasileiro</h5>
+                    <p>O Campeonato Brasileiro é a principal competição nacional. O Corinthians venceu este torneio várias vezes, incluindo as edições de 1990, 1998, 1999 e 2015.</p>
                 </div>
             </div>
 
             <!-- Troféu 3: Copa Libertadores -->
             <div class="col-md-4">
-                <div class="card trophy-card">
-                    <img src="libertadores.jpg" class="card-img-top trophy-img" alt="Troféu Copa Libertadores">
-                    <div class="card-body">
-                        <h5 class="card-title">Copa Libertadores</h5>
-                        <p class="card-text">A Copa Libertadores é o torneio mais prestigioso da América do Sul. O Corinthians venceu em 2012, conquistando seu primeiro título no torneio.</p>
-                    </div>
+                <div class="trophy-card">
+                    <img src="libertadores.jpg" class="trophy-img" alt="Troféu Copa Libertadores">
+                    <h5>Copa Libertadores</h5>
+                    <p>A Copa Libertadores é o torneio mais prestigioso da América do Sul. O Corinthians venceu em 2012, conquistando seu primeiro título no torneio.</p>
                 </div>
             </div>
 
             <!-- Troféu 4: Copa do Mundo de Clubes -->
             <div class="col-md-4">
-                <div class="card trophy-card">
-                    <img src="copa_do_mundo_de_clubes.jpg" class="card-img-top trophy-img" alt="Troféu Copa do Mundo de Clubes">
-                    <div class="card-body">
-                        <h5 class="card-title">Copa do Mundo de Clubes</h5>
-                        <p class="card-text">A Copa do Mundo de Clubes da FIFA reúne os campeões continentais. O Corinthians venceu em 2000 e 2012, destacando-se no cenário mundial.</p>
-                    </div>
+                <div class="trophy-card">
+                    <img src="copa_do_mundo_de_clubes.jpg" class="trophy-img" alt="Troféu Copa do Mundo de Clubes">
+                    <h5>Copa do Mundo de Clubes</h5>
+                    <p>A Copa do Mundo de Clubes da FIFA reúne os campeões continentais. O Corinthians venceu em 2000 e 2012, destacando-se no cenário mundial.</p>
                 </div>
             </div>
 
             <!-- Troféu 5: Recopa Sul-Americana -->
             <div class="col-md-4">
-                <div class="card trophy-card">
-                    <img src="recopa.jpg" class="card-img-top trophy-img" alt="Troféu Recopa Sul-Americana">
-                    <div class="card-body">
-                        <h5 class="card-title">Recopa Sul-Americana</h5>
-                        <p class="card-text">A Recopa Sul-Americana é um torneio que enfrenta os campeões da Libertadores e da Sul-Americana. O Corinthians conquistou a Recopa em 2013.</p>
-                    </div>
+                <div class="trophy-card">
+                    <img src="recopa.jpg" class="trophy-img" alt="Troféu Recopa Sul-Americana">
+                    <h5>Recopa Sul-Americana</h5>
+                    <p>A Recopa Sul-Americana é um torneio que enfrenta os campeões da Libertadores e da Sul-Americana. O Corinthians conquistou a Recopa em 2013.</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Homenagem ao Corinthians. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

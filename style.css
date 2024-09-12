@@ -41,9 +41,13 @@ nav .logo a {
     border-radius: 4px;
 }
 
+/* Estilos para o botão hamburger e menu em telas pequenas */
+#menu-toggle {
+    display: none; /* Esconde o checkbox */
+}
+
 .hamburger {
     display: none;
-    flex-direction: column;
     cursor: pointer;
 }
 
@@ -54,33 +58,52 @@ nav .logo a {
     margin: 4px 0;
 }
 
-/* Checkbox Hack */
-#menu-toggle {
-    display: none;
-}
-
-#menu-toggle:checked + .nav-links {
-    display: flex;
-    flex-direction: column;
-}
-
+/* Estilos de Responsividade */
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
     .nav-links {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 0;
+        display: none; /* Inicialmente escondido */
         width: 100%;
-        background-color: #333;
         flex-direction: column;
         align-items: center;
+        background-color: #333;
+    }
+
+    #menu-toggle:checked + .hamburger + .nav-links {
+        display: flex; /* Mostra o menu ao clicar */
     }
 
     .nav-links li {
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .hamburger {
-        display: flex;
+        display: block;
     }
+}
+
+/* Estilos para a lista de links */
+.container {
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.link-list {
+    margin-bottom: 20px;
+}
+
+.link-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+.link-list a:hover {
+    text-decoration: underline;
 }
