@@ -1,7 +1,42 @@
-/* Estilos básicos */
-body {
+/* Estilos básicos para os elementos após o reset */
+
+h1, h2, p {
     margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem; /* Ajuste conforme necessário */
+    margin-bottom: 20px; /* Espaçamento abaixo do título principal */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 2rem; /* Ajuste conforme necessário */
+    margin-top: 30px; /* Espaçamento acima do subtítulo */
+    margin-bottom: 15px; /* Espaçamento abaixo do subtítulo */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
+    line-height: 1.6; /* Garante uma altura de linha consistente */
+}
+
+strong {
+    font-weight: bold; /* Garante que o texto em negrito fique mais destacado */
+}
+
+br {
+    margin-bottom: 10px; /* Espaçamento após a quebra de linha */
+}
+
+/* Estilos adicionais */
+body {
     font-family: Arial, sans-serif;
+    line-height: 1.6; /* Garante uma altura de linha consistente */
+    overflow-x: hidden; /* Remove barras de rolagem horizontais */
 }
 
 nav {
@@ -34,6 +69,7 @@ nav .logo a {
     text-decoration: none;
     font-size: 18px;
     padding: 8px 12px;
+    transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -41,9 +77,8 @@ nav .logo a {
     border-radius: 4px;
 }
 
-/* Estilos para o botão hamburger e menu em telas pequenas */
 #menu-toggle {
-    display: none; /* Esconde o checkbox */
+    display: none;
 }
 
 .hamburger {
@@ -58,14 +93,13 @@ nav .logo a {
     margin: 4px 0;
 }
 
-/* Estilos de Responsividade */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
     }
 
     .nav-links {
-        display: none; /* Inicialmente escondido */
+        display: none;
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -73,7 +107,7 @@ nav .logo a {
     }
 
     #menu-toggle:checked + .hamburger + .nav-links {
-        display: flex; /* Mostra o menu ao clicar */
+        display: flex;
     }
 
     .nav-links li {
@@ -83,15 +117,31 @@ nav .logo a {
     .hamburger {
         display: block;
     }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
 }
 
-/* Estilos para a lista de links */
 .container {
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .text-center {
     text-align: center;
+}
+
+/* Ajuste da imagem para a página index.html */
+.img-fluid {
+    max-width: 100%; /* Faz com que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.center-block {
+    max-height: 50vh; /* Ajusta a altura máxima da imagem para 50% da altura da viewport */
+    object-fit: cover; /* Garante que a imagem cubra o container sem distorção */
 }
 
 .link-list {
@@ -102,18 +152,38 @@ nav .logo a {
     text-decoration: none;
     color: #007bff;
     font-size: 1.2rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .link-list a:hover {
     text-decoration: underline;
+    color: #0056b3;
 }
 
-h1.text-center {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-weight: bold;
+.trophy-img {
+    width: 100%;
+    max-height: 300px;
+    height: auto;
+    object-fit: contain;
 }
-p.text-center {
-    font-style: italic;
+
+.trophy-card {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.trophy-card h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.trophy-card p {
+    margin-bottom: 0;
+}
+body {
+    background-image: url('/corinthians_em_widescreen_e_alta_definicao_tw_1920x1080.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }

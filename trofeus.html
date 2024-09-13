@@ -4,27 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Troféus - Homenagem ao Corinthians</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         .trophy-img {
-            width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
-            max-height: 300px; /* Define uma altura máxima para manter a imagem proporcional */
-            height: auto; /* Ajusta a altura automaticamente para preservar a proporção */
-            object-fit: contain; /* Garante que a imagem se ajuste ao contêiner sem cortar */
+            width: 100%;
+            max-height: 200px; /* Ajusta a altura máxima da imagem */
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 15px; /* Espaçamento abaixo da imagem */
         }
         .trophy-card {
             margin-bottom: 30px;
-            text-align: center; /* Centraliza o texto dentro do card */
+            text-align: center;
+            border: 1px solid #ddd; /* Adiciona uma borda ao redor do card */
+            border-radius: 8px; /* Arredonda os cantos da borda */
+            padding: 15px; /* Adiciona preenchimento interno ao card */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+            background-color: #f9f9f9; /* Define uma cor de fundo clara */
         }
         .trophy-card h5 {
             margin-top: 10px;
             margin-bottom: 10px;
+            font-size: 1.25rem; /* Ajusta o tamanho da fonte do título */
+            font-family: 'Montserrat', sans-serif;
         }
         .trophy-card p {
             margin-bottom: 0;
+            font-size: 1rem; /* Ajusta o tamanho da fonte do parágrafo */
+            color: #333; /* Define a cor do texto */
         }
         .container {
-            text-align: center; /* Centraliza o texto dentro do contêiner */
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Espaçamento entre os cards */
+            justify-content: center;
+        }
+        .col-md-4 {
+            flex: 1 1 calc(33.333% - 20px); /* Ajusta a largura dos cards em 3 colunas com espaçamento */
+            max-width: calc(33.333% - 20px);
         }
     </style>
 </head>
@@ -47,7 +68,7 @@
     </nav>
 
     <div class="container mt-4">
-        <h1>Troféus do Corinthians</h1>
+        <h1 class="text-center">Troféus do Corinthians</h1>
         <div class="row">
             <!-- Troféu 1: Campeonato Paulista -->
             <div class="col-md-4">

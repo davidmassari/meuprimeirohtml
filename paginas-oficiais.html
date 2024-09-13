@@ -4,7 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Páginas Oficiais - Homenagem ao Corinthians</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+        .container {
+            padding: 80px;
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: 'Montserrat', sans-serif;
+            background: rgba(255, 255, 255, 0.6); /* Fundo branco semi-transparente */
+            border-radius: 8px; /* Arredonda os cantos do container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px; /* Espaçamento entre os links */
+        }
+
+        .link-list a {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        .link-list a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -22,10 +65,10 @@
     <div class="container">
         <h1 class="text-center">Páginas Oficiais do Corinthians</h1>
         <div class="text-center link-list">
-            <p><a href="https://www.corinthians.com.br" target="_blank">Site Oficial do Corinthians</a></p>
-            <p><a href="https://www.facebook.com/corinthians" target="_blank">Facebook Oficial</a></p>
-            <p><a href="https://www.instagram.com/corinthians/" target="_blank">Instagram Oficial</a></p>
-            <p><a href="https://www.youtube.com/@corinthians" target="_blank">YouTube Oficial</a></p>
+            <a href="https://www.corinthians.com.br" target="_blank">Site Oficial do Corinthians</a>
+            <a href="https://www.facebook.com/corinthians" target="_blank">Facebook Oficial</a>
+            <a href="https://www.instagram.com/corinthians/" target="_blank">Instagram Oficial</a>
+            <a href="https://www.youtube.com/@corinthians" target="_blank">YouTube Oficial</a>
         </div>
     </div>
 </body>
